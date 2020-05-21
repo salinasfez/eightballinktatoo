@@ -1,7 +1,7 @@
 body{
     margin: 0 auto;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid red;
     background-color: black;
 }
 .container {
@@ -40,4 +40,7 @@ iframe {
 }
 .hide-info {
     display: none;
+}
+.carousel-item {
+    height: 500px;
 }

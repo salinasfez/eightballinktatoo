@@ -1,8 +1,9 @@
 import React from 'react';
-// import '../src/App.css';
+import '../src/App.css';
 import 'bulma/css/bulma.css';
 import Logo from '../src/images/eihgth-ball-color.png';
 import Carousel from 'react-bootstrap/Carousel';
+import Button from 'react-bootstrap/Button';
 
 
 
@@ -36,14 +37,14 @@ class App extends React.Component{
             
         </div>
         {/* className='body' */}
-        <div className='body body-item'>
+        <div className='body'>
           {/* carousel start */}
           <Carousel>
-              <Carousel.Item style={{'height':"300px"}}>
-                <img  style={{'height':"300px"}} className="d-block w-100" src={require('../src/images/IMG_4946.jpeg')} alt="First slide"/>
+              <Carousel.Item className='carousel-item' >
+                <img  className="d-block w-100" src={require('../src/images/IMG_4946.jpeg')} alt="First slide"/>
               </Carousel.Item>
-              <Carousel.Item style={{'height':"300px"}}>
-                <img  style={{'height':"300px"}} className="d-block w-100" src={require('../src/images/IMG_0741.jpeg')} alt="Second slide"/>
+              <Carousel.Item >
+                <img className="d-block w-100" src={require('../src/images/IMG_0741.jpeg')} alt="Second slide"/>
               </Carousel.Item>
               <Carousel.Item>
                 <img className="d-block w-100" src={require('../src/images/IMG_1542.jpeg')} alt="Second slide"/>
@@ -93,12 +94,14 @@ class App extends React.Component{
           <div className='body-item'>
              {/* form for sending text messages */}
              <h2>Send the shop a quick message!</h2>
+             <form>
              <label className='hide-info'>Your phone number: </label><br />
              <input className='hide-info' value={text.recipient} onChange={e => this.setState({ text: { ...text, recipient: e.target.value }})} /><br />
              <div style={spacer} />
              <label>Message</label>
-             <textarea rows={30} cols={30} placeholder={'Type your message here'}  style = {textArea} value={text.textMessage} onChange={e => this.setState({ text: { ...text, textMessage: e.target.value}})} />
-             <button onClick={this.sendText}>Send text</button>
+             <textarea rows={20} cols={30} placeholder={'Type your message here'}  style = {textArea} value={text.textMessage} onChange={e => this.setState({ text: { ...text, textMessage: e.target.value}})} />
+             <Button type='submit' onClick={this.sendText}>Send text</Button>
+             </form>
           </div>
           <div className='body-item'>
           <iframe className='body-item' src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=c2FsaW5hc2ZlejAzMjhAZ21haWwuY29t&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=bzNnMWJlY25laThlcDJxdHZybDVkMmxndG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237986CB&amp;color=%2333B679&amp;color=%23C0CA33&amp;color=%230B8043" style={{border:"solid 1px #777"}} width="800" height="600" frameborder="0" scrolling="no"></iframe>
