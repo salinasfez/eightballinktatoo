@@ -35,3 +35,9 @@ h2 {
 iframe {
     width: 100%;
 }
+.empty-space{
+    margin: 3%;
+}
+.hide-info {
+    display: none;
+}

@@ -1,7 +1,8 @@
 import React from 'react';
-import '../src/App.css';
+// import '../src/App.css';
 import 'bulma/css/bulma.css';
 import Logo from '../src/images/eihgth-ball-color.png';
+import Carousel from 'react-bootstrap/Carousel';
 
 
 
@@ -29,23 +30,74 @@ class App extends React.Component{
     }
     return(
       <div className='container'>
-        <div >
+        <div className='empty-space'>
             <img src={Logo} className='logo'/>
             <h2>99 E Park St, Harvard, IL 60033</h2>
             
         </div>
-        <div className='body'>
+        {/* className='body' */}
+        <div className='body body-item'>
+          {/* carousel start */}
+          <Carousel>
+              <Carousel.Item style={{'height':"300px"}}>
+                <img  style={{'height':"300px"}} className="d-block w-100" src={require('../src/images/IMG_4946.jpeg')} alt="First slide"/>
+              </Carousel.Item>
+              <Carousel.Item style={{'height':"300px"}}>
+                <img  style={{'height':"300px"}} className="d-block w-100" src={require('../src/images/IMG_0741.jpeg')} alt="Second slide"/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={require('../src/images/IMG_1542.jpeg')} alt="Second slide"/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={require('../src/images/IMG_4938.jpeg')} alt="Second slide"/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={require('../src/images/IMG_5304.jpg')} alt="Second slide"/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={require('../src/images/IMG_5010.jpeg')} alt="Second slide"/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={require('../src/images/IMG_5297.jpg')} alt="Second slide"/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={require('../src/images/IMG_5296.jpg')} alt="Second slide"/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={require('../src/images/IMG_5295.jpg')} alt="Second slide"/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={require('../src/images/IMG_5305.jpg')} alt="Second slide"/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={require('../src/images/IMG_5303.jpg')} alt="Second slide"/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={require('../src/images/IMG_5302.jpg')} alt="Second slide"/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={require('../src/images/IMG_5301.jpg')} alt="Second slide"/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={require('../src/images/IMG_5300.jpg')} alt="Second slide"/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={require('../src/images/IMG_5299.jpg')} alt="Second slide"/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={require('../src/images/IMG_5298.jpg')} alt="Second slide"/>
+              </Carousel.Item>
+          </Carousel>
           <div className='carousel'>
-            <img className='body-item' src={require('../src/images/IMG_4946.jpeg')}/>
           </div>
           <div className='body-item'>
              {/* form for sending text messages */}
              <h2>Send the shop a quick message!</h2>
-             <label>Your phone number: </label><br />
-             <input value={text.recipient} onChange={e => this.setState({ text: { ...text, recipient: e.target.value }})} /><br />
+             <label className='hide-info'>Your phone number: </label><br />
+             <input className='hide-info' value={text.recipient} onChange={e => this.setState({ text: { ...text, recipient: e.target.value }})} /><br />
              <div style={spacer} />
              <label>Message</label>
-             <textarea rows={3} style = {textArea} value={text.textMessage} onChange={e => this.setState({ text: { ...text, textMessage: e.target.value}})} />
+             <textarea rows={30} cols={30} placeholder={'Type your message here'}  style = {textArea} value={text.textMessage} onChange={e => this.setState({ text: { ...text, textMessage: e.target.value}})} />
              <button onClick={this.sendText}>Send text</button>
           </div>
           <div className='body-item'>
