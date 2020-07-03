@@ -31,4 +31,4 @@ app.get('/send-text', (req, res) => {
     }).then((message) => console.log(message.body))
 })
 
-app.listen(3000, () => console.log('App is running on port 3000'));
+app.listen(4000, () => console.log('App is running on port richie'));

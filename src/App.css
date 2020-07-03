@@ -1,12 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Oldenburg&display=swap');
+
+body {
+    
+    font-family: 'Oldenburg', cursive;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 .container {
+    width: 100%;
     background-color: black;
+}
+h3 {
+    color: white;
 }
 
 .body {
+    background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: black;
+    border: 1px solid black;
     margin: 2%;
 }
 .logo{
@@ -44,14 +58,107 @@ iframe {
     /* background-image: url('../src/images/vatos_forever.svg');
     background-repeat: no-repeat;
     background-size: 100%; */
-    background-color: black;
+    
 }
 .calendar {
     width: 45%;
     text-align: center;
 }
 
-h3 {
-    color: white;
+
+
+.icon-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.icons {
+    width: 5%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+.menu-button {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
 }
 
+.menu-button-burger {
+    width: 50px;
+    height: 6px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+}
+.menu-button-burger::before,
+.menu-button-burger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+}
+.menu-button-burger::before {
+    transform: translateY(-16px);
+}
+.menu-button-burger::after {
+    transform: translateY(16px);
+}
+
+
+
+.menu-button.open .menu-button-burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+.menu-button.open .menu-button-burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-button.open .menu-button-burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+/* Dropdown Button */
+.dropbtn {
+   background-color: black;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    transition: all .5s ease-in-out;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
