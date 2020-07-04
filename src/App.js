@@ -4,7 +4,7 @@ import 'bulma/css/bulma.css';
 import Logo from '../src/images/eihgth-ball-color.png';
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
-import Vatos from '../src/images/vatos_locos.svg';
+
 
 
 
@@ -41,35 +41,6 @@ class App extends React.Component{
     
     .catch(err => console.log(err));
   }
-  // handleMenu = () => {
-  //   const menuButton = document.querySelector('.menu-button');
-  //   let menuOpen = false;
-  //   menuButton.addEventListener('click', () => {
-  //     if (!menuOpen) {
-  //       menuButton.classList.add('open');
-  //       menuOpen = true;
-  //     }
-  //     else {
-  //       menuButton.classList.remove('open');
-  //       menuOpen = false;
-  //     }
-  //   })
-  // }
-  // handleDrop = () => {
-  //   document.getElementById("menu-button").classList.toggle("show");
-  //   window.onclick = (event) => {
-  //       if (!event.target.matches('.dropbtn')) {
-  //         const dropdowns = document.getElementsByClassName("dropdown-content");
-  //         let i;
-  //         for (i = 0; i < dropdowns.length; i++) {
-  //           const openDropdown = dropdowns[i];
-  //           if (openDropdown.classList.contains('show')) {
-  //             openDropdown.classList.remove('show');
-  //           }
-  //         }
-  //       }
-  //     }
-  // }
   handleDrop = () => {
     document.getElementById("myDropdown").classList.toggle("show");
     window.onclick = (event) => {
@@ -95,21 +66,40 @@ class App extends React.Component{
     }
     return(
       <div className='container'>
-         <div className='dropbtn'></div>
-         <div className="dropdown">
+        <div className='top-flex-container'>
+         {/* <div className='dropbtn'></div> */}
+         
+         <div className="dropbtn">
                     <div onClick={this.handleDrop} className='dropbtn menu-button-burger'></div>
                     {/* <button onClick={this.handleDrop} className="dropbtn">Menu</button> */}
                     <div id="myDropdown" className="dropdown-content">
-                        <a href="#">Home</a>
+                        <a href="#business-hours">Hours</a>
                         <a href="#arte">Arte</a>
                         <a href='#social-media'>Social Media</a>
                     </div>
         </div>
         <div className='empty-space'>
             <img src={Logo} className='logo'/>
-            <h3>99 E Park St. Harvard, IL 60033</h3>
-            
         </div>
+        </div>
+        <div className='welcome'>
+          <div>
+            <section>
+              <h1 id='welcome-header'>WELCOME TO 8BALL INK TATTOO</h1>
+              <h3 id='established'>|  ESTABLISHED 2020  |</h3>
+            </section>
+          </div>
+          <div>
+            <article>
+                 Ideas become dreams. Dreams become reality. ILL State Ink bloomed from the idea of a trio of artists who wanted to open a tattoo studio dedicated to quality tattooing and personally attentive customer service. You'll find no "tattitudes" or egos from the artists at ILL State Ink. Our goal is to provide clients with a unique tattoo as original as a custom piece of art. Our studio is located at 3088 N. Milwaukee Ave, in the Avondale neighborhood 
+            </article>
+          </div>
+        </div>
+        <div id='social-media' className='icon-container'>
+              <img src={require('../src/images/icons/fb.svg')} alt={'facebook'} className='icons' onClick={() => this.facebookTab()}/>
+              <img src={require('../src/images/icons/ig.svg')} alt={'ig'} className='icons' onClick={() => this.instagramTab()}/>
+              <img src={require('../src/images/icons/email.svg')} alt={'email'} className='icons' onClick={() => this.emailTab()}/>
+          </div>
         {/* className='body' */}
         <div className='body'>
           {/* carousel start */}
@@ -167,18 +157,16 @@ class App extends React.Component{
              <Button type='submit' onClick={this.sendText}>Send text</Button>
              </form>
           </div>
-          {/* start of calendar */}
-          {/* <div className='calendar'>
-            <h2>Book a free, in person, estimate!</h2>
-            <iframe  src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=c2FsaW5hc2ZlejAzMjhAZ21haWwuY29t&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=bzNnMWJlY25laThlcDJxdHZybDVkMmxndG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237986CB&amp;color=%2333B679&amp;color=%23C0CA33&amp;color=%230B8043" style={{border:"solid 1px #777"}} width="800" height="600" frameborder="0" scrolling="no"></iframe>
-          </div> */}
         </div>
-          <div id='social-media' className='icon-container'>
-              <img src={require('../src/images/icons/fb.svg')} alt={'facebook'} className='icons' onClick={() => this.facebookTab()}/>
-              <img src={require('../src/images/icons/ig.svg')} alt={'ig'} className='icons' onClick={() => this.instagramTab()}/>
-              <img src={require('../src/images/icons/email.svg')} alt={'email'} className='icons' onClick={() => this.emailTab()}/>
-
-          </div>
+        <div id='business-hours' className='business-hours'>
+          <h2>Address:</h2>
+          <h5>99 E Park St. Harvard, IL 60033</h5>
+          <h2>Business Hours</h2>
+          <h5>Monday & Tuesday 6pm-11pm</h5>
+​          <h5>Wednesday through Saturday 1pm-11pm</h5>
+          <h5>Sunday: CLOSED</h5>
+        </div>
+          <div id='back-to-top'><h5><a href='#'>back to top</a></h5></div>
     </div>
     )
   }

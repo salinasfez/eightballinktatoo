@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Oldenburg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
 
 body {
-    
-    font-family: 'Oldenburg', cursive;
     margin: 0 auto;
+    text-align: center;
+    width: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
+}
 .container {
+    font-family: 'Nunito Sans', sans-serif;
     width: 100%;
-    background-color: black;
 }
 h3 {
     color: white;
@@ -24,18 +24,19 @@ h3 {
     margin: 2%;
 }
 .logo{
-    width: 30%;
+    width: 40%;
     margin-top: 2%;
 }
 /* logo and address space */
 .empty-space {   
     text-align: center;
     margin-bottom: 5%;
+    margin-top: 5%;
+    /* border: 1px solid red; */
+    width: 75%;
+
 }
 
-iframe {
-    width: 100%;
-}
 /* hide phone number */
 .hide-info {
     display: none;
@@ -54,19 +55,8 @@ iframe {
 .messages {
     margin-top: 15%;
     width: 45%;
-    text-align: center;
-    /* background-image: url('../src/images/vatos_forever.svg');
-    background-repeat: no-repeat;
-    background-size: 100%; */
-    
+    text-align: center;    
 }
-.calendar {
-    width: 45%;
-    text-align: center;
-}
-
-
-
 .icon-container {
     display: flex;
     justify-content: space-evenly;
@@ -74,26 +64,19 @@ iframe {
 }
 .icons {
     width: 5%;
-    margin-bottom: 10%;
-    margin-top: 10%;
+    margin-bottom: 3%;
+    margin-top: 3%;
 }
-.menu-button {
-    position: relative;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-    transition: all .5s ease-in-out;
+.icons:hover {
+    transform: scale(1.2);
 }
-
 .menu-button-burger {
+    /* border: 1px solid white; */
     width: 50px;
     height: 6px;
     background: white;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    box-shadow: 0 4px 10px rgba(255,101,47,.2);
     transition: all .5s ease-in-out;
 }
 .menu-button-burger::before,
@@ -102,35 +85,22 @@ iframe {
     position: absolute;
     width: 50px;
     height: 6px;
-    background: white;
+    background: black;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.632);
     transition: all .5s ease-in-out;
 }
-.menu-button-burger::before {
+ .menu-button-burger::before {
     transform: translateY(-16px);
-}
-.menu-button-burger::after {
     transform: translateY(16px);
-}
+    }
 
-
-
-.menu-button.open .menu-button-burger {
-    transform: translateX(-50px);
-    background: transparent;
-    box-shadow: none;
-}
-.menu-button.open .menu-button-burger::before {
-    transform: rotate(45deg) translate(35px, -35px);
-}
-.menu-button.open .menu-button-burger::after {
-    transform: rotate(-45deg) translate(35px, 35px);
-}
 /* Dropdown Button */
 .dropbtn {
-   background-color: black;
-    position: relative;
+    margin-top: 5%;
+    margin-left: 5%;
+    /* border: 1px solid red; */
+    background-color: white;    
     display:flex;
     justify-content: center;
     align-items: center;
@@ -142,11 +112,14 @@ iframe {
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    /* z-index: 1; */
+    /* border: 1px solid red; */
+    margin-left: 8%;
+    margin-top: 3%;
   }
   
   /* Links inside the dropdown */
@@ -162,3 +135,50 @@ iframe {
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
+
+  .top-flex-container {
+      display: flex;
+      justify-content: inherit;
+      flex-direction: row;
+      /* border: 1px solid red; */
+  }
+  .business-hours {
+      color: black;
+      text-align: center;
+  }
+  #back-to-top {
+      text-align: center;
+  }
+  .welcome {
+      /* background-color: black; */
+      color: black;
+      justify-content: flex-end;
+      display: flex;
+      border-radius: 2em;
+      flex-direction: row;
+      border-top: 1px solid #3B5999;
+      border-bottom: 1px solid #3B5999;
+  }
+  .welcome h3 {
+      color: black;
+  }
+  article {
+      padding: 5%;
+  }
+  
+  section {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      width: 500px;
+     
+  }
+  #established {
+      margin-top: 15%;
+      margin-left: 5%;
+      padding: 2%;
+  }
+  #welcome-header {
+      margin-top: 5%;
+      margin-left: 5%;
+  }
