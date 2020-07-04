@@ -22,6 +22,7 @@ h3 {
     justify-content: space-around;
     border: 1px solid black;
     /* margin: 4%; */
+    border-radius: 1em;
 }
 .logo{
     width: 40%;
@@ -113,7 +114,7 @@ h3 {
   .dropdown-content {
     display: none;
     position: fixed;
-    background-color: white;
+    background-color: black;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     /* z-index: 1; */
@@ -131,7 +132,7 @@ h3 {
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd}
+  .dropdown-content a:hover {background-color: rgb(198, 188, 188)}
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
@@ -187,3 +188,20 @@ h3 {
       margin-top: 4%;
       font-weight: bold;
   }
+  .my-info {
+      margin-top: 45%;
+      text-align: center;
+      z-index: 1;
+  }
+  .my-info a {
+    margin-top: 50%;
+  }
+  #phone-num {
+      font-weight: bold;
+      margin-top: 2%;
+  }
+  #ref {
+      margin: 2%;
+      text-align: center; 
+  }
+ 

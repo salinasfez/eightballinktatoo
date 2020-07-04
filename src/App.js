@@ -5,6 +5,7 @@ import Logo from '../src/images/eihgth-ball-color.png';
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import Map from './Map';
+import MyInfo from './MyInfo';
 
 
 
@@ -42,6 +43,12 @@ class App extends React.Component{
     
     .catch(err => console.log(err));
   }
+  callShop = () => {
+    window.open(
+        'tel:815-770-0299',
+        '_blank'
+    )
+}
   handleDrop = () => {
     document.getElementById("myDropdown").classList.toggle("show");
     window.onclick = (event) => {
@@ -82,6 +89,7 @@ class App extends React.Component{
         </div>
         <div className='empty-space'>
             <img src={Logo} className='logo'/>
+            <h5 id='phone-num'>(815) 770-0299</h5>
         </div>
         </div>
         <div className='welcome'>
@@ -98,10 +106,12 @@ class App extends React.Component{
           </div>
         </div>
         <div id='social-media' className='icon-container'>
-              <h5 id='like'>Like, Follow, and Email -----></h5>
+              <h5 id='like'>Like, Follow, Email, or Call -----></h5>
               <img src={require('../src/images/icons/fb.svg')} alt={'facebook'} className='icons' onClick={() => this.facebookTab()}/>
               <img src={require('../src/images/icons/ig.svg')} alt={'ig'} className='icons' onClick={() => this.instagramTab()}/>
               <img src={require('../src/images/icons/email.svg')} alt={'email'} className='icons' onClick={() => this.emailTab()}/>
+              <img src={require('../src/images/icons/phone-icon.svg')} alt={'phone'} className='icons' onClick={() => this.callShop()}/>
+
           </div>
         {/* className='body' */}
         <div className='body'>
@@ -111,6 +121,24 @@ class App extends React.Component{
           <Carousel>
               <Carousel.Item className='carousel-item' >
                 <img  className="d-block w-100" src={require('../src/images/IMG_4946.jpeg')} alt="First slide"/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={require('../src/images/harley.jpg')} alt="Second slide"/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={require('../src/images/clock.jpg')} alt="Second slide"/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={require('../src/images/christt.jpg')} alt="Second slide"/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={require('../src/images/ink4.jpg')} alt="Second slide"/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={require('../src/images/ink6.jpg')} alt="Second slide"/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={require('../src/images/ink3.jpg')} alt="Second slide"/>
               </Carousel.Item>
               <Carousel.Item className='carousel-item' >
                 <img  className="d-block w-100" src={require('../src/images/IMG_0872.jpeg')} alt="First slide"/>
@@ -161,19 +189,24 @@ class App extends React.Component{
              </form>
           </div>
         </div>
+        <div id='ref'>
+          <h4>Website design and full-stack development by <a href='http://federicosalinas.com/' target='_blank' >Federico Salinas</a></h4>
+        </div>
         <div id='business-hours' className='business-hours'>
           <h2>Business Hours</h2>
-          <h5>Monday & Tuesday 6pm-11pm</h5>
-​          <h5>Wednesday through Saturday 1pm-11pm</h5>
           <h5>Sunday: CLOSED</h5>
+          <h5>Monday: CLOSED</h5>
+          <h5>Tuesday & Wednesday 10:30AM-9:30PM</h5>
+          <h5>Thursday - Saturday 10:30AM-10:00PM</h5>
         </div>
         <div id='location' className='business-hours'>
-          <h2>Address:</h2>
+          <h2>Address</h2>
           <h5>99 E Park St. Harvard, IL 60033</h5>
-          <Map/>
+            <Map />
+        <div className='my-info'>
+          <h4>MORE CONTENT TO GO HERE(STATIC)</h4>
         </div>
-        <br></br>
-          <div id='back-to-top'><h5><a href='#'>back to top</a></h5></div>
+        </div>
     </div>
     )
   }

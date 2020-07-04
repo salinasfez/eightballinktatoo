@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
+import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 
 const mapStyles = {
   width: '100%',
-  height: '25%'
+  height: '20%',
+  border: '1px solid black',
+  zIndex: '1'
 };
 
 export class MapContainer extends Component {
@@ -15,14 +17,15 @@ export class MapContainer extends Component {
                     zoom={18}
                     style={mapStyles}
                     initialCenter={{
-                    lat: 42.418119,
-                    lng: -88.617001
+                    lat: 42.418301,
+                    lng:  -88.617482
                 }}
                 >
                 <Marker
                  />
                 </Map>
-                 
+               
+                
 
         )
     }
