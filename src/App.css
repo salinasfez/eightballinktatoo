@@ -21,7 +21,7 @@ h3 {
     flex-direction: row;
     justify-content: space-around;
     border: 1px solid black;
-    margin: 2%;
+    /* margin: 4%; */
 }
 .logo{
     width: 40%;
@@ -145,6 +145,7 @@ h3 {
   .business-hours {
       color: black;
       text-align: center;
+      margin-top: 5%;
   }
   #back-to-top {
       text-align: center;
@@ -181,4 +182,8 @@ h3 {
   #welcome-header {
       margin-top: 5%;
       margin-left: 5%;
+  }
+  #like {
+      margin-top: 4%;
+      font-weight: bold;
   }

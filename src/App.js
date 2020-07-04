@@ -4,6 +4,7 @@ import 'bulma/css/bulma.css';
 import Logo from '../src/images/eihgth-ball-color.png';
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
+import Map from './Map';
 
 
 
@@ -73,9 +74,10 @@ class App extends React.Component{
                     <div onClick={this.handleDrop} className='dropbtn menu-button-burger'></div>
                     {/* <button onClick={this.handleDrop} className="dropbtn">Menu</button> */}
                     <div id="myDropdown" className="dropdown-content">
-                        <a href="#business-hours">Hours</a>
                         <a href="#arte">Arte</a>
                         <a href='#social-media'>Social Media</a>
+                        <a href="#location">Location</a>
+                        <a href="#business-hours">Hours</a>
                     </div>
         </div>
         <div className='empty-space'>
@@ -96,6 +98,7 @@ class App extends React.Component{
           </div>
         </div>
         <div id='social-media' className='icon-container'>
+              <h5 id='like'>Like, Follow, and Email -----></h5>
               <img src={require('../src/images/icons/fb.svg')} alt={'facebook'} className='icons' onClick={() => this.facebookTab()}/>
               <img src={require('../src/images/icons/ig.svg')} alt={'ig'} className='icons' onClick={() => this.instagramTab()}/>
               <img src={require('../src/images/icons/email.svg')} alt={'email'} className='icons' onClick={() => this.emailTab()}/>
@@ -159,13 +162,17 @@ class App extends React.Component{
           </div>
         </div>
         <div id='business-hours' className='business-hours'>
-          <h2>Address:</h2>
-          <h5>99 E Park St. Harvard, IL 60033</h5>
           <h2>Business Hours</h2>
           <h5>Monday & Tuesday 6pm-11pm</h5>
 ​          <h5>Wednesday through Saturday 1pm-11pm</h5>
           <h5>Sunday: CLOSED</h5>
         </div>
+        <div id='location' className='business-hours'>
+          <h2>Address:</h2>
+          <h5>99 E Park St. Harvard, IL 60033</h5>
+          <Map/>
+        </div>
+        <br></br>
           <div id='back-to-top'><h5><a href='#'>back to top</a></h5></div>
     </div>
     )
