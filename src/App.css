@@ -183,6 +183,7 @@ h3 {
   #welcome-header {
       margin-top: 5%;
       margin-left: 5%;
+      font-weight: bold;
   }
   #like {
       margin-top: 4%;
@@ -191,10 +192,8 @@ h3 {
   .my-info {
       margin-top: 45%;
       text-align: center;
-      z-index: 1;
-  }
-  .my-info a {
-    margin-top: 50%;
+      
+      
   }
   #phone-num {
       font-weight: bold;

@@ -5,7 +5,7 @@ import Logo from '../src/images/eihgth-ball-color.png';
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import Map from './Map';
-import MyInfo from './MyInfo';
+
 
 
 
@@ -203,9 +203,6 @@ class App extends React.Component{
           <h2>Address</h2>
           <h5>99 E Park St. Harvard, IL 60033</h5>
             <Map />
-        <div className='my-info'>
-          <h4>MORE CONTENT TO GO HERE(STATIC)</h4>
-        </div>
         </div>
     </div>
     )
