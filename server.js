@@ -6,7 +6,7 @@ const twilio = require('twilio');
 //twilio requirements -- texting API
 
 const accountSid = 'AC914967b1b596685c52ad515f8ad978ce';
-const authToken = 'c458588581e4a8a11cef09893cc1712c'
+const authToken = 'b26bae8a140670a31b25a8adaf589cda'
 const client = new twilio(accountSid, authToken);
 
 const app = express();
@@ -26,9 +26,9 @@ app.get('/send-text', (req, res) => {
     client.messages.create({
         body: textMessage,
         // setting to number to Octavio's number
-        to: '+18159097133',
+        to: '+17082279303',
         from: '+12025190773' // this is my  twilio number
     }).then((message) => console.log(message.body))
 })
 
-app.listen(4000, () => console.log('App is running on port richie'));
+app.listen(8000, () => console.log('App is running on port 8000'));
