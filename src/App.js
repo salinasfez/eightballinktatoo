@@ -94,15 +94,16 @@ class App extends React.Component{
         </div>
         <div className='welcome'>
           <div>
-            <section>
+            <section className='section'>
               <h1 id='welcome-header'>WELCOME TO 8BALL INK TATTOO</h1>
               <h3 id='established'>|  ESTABLISHED 2020  |</h3>
             </section>
           </div>
+          
           <div>
-            <article>
-                 Ideas become dreams. Dreams become reality. ILL State Ink bloomed from the idea of a trio of artists who wanted to open a tattoo studio dedicated to quality tattooing and personally attentive customer service. You'll find no "tattitudes" or egos from the artists at ILL State Ink. Our goal is to provide clients with a unique tattoo as original as a custom piece of art. Our studio is located at 3088 N. Milwaukee Ave, in the Avondale neighborhood 
-            </article>
+            <p className='article'>
+                 Ideas become dreams. Dreams become reality. 8ball Ink Tattoo bloomed from the idea of an artist who wanted to bring a tattoo studio to his hometown. A studio dedicated to quality tattooing. You will not find an ego at 8ball Ink Tattoo, instead you'll be welcome with respect regardless of where you come from. The goal is to provide customers with a unique tattoo as original as it was portrayed in their plans.  
+            </p>
           </div>
         </div>
         <div id='social-media' className='icon-container'>

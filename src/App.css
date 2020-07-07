@@ -164,7 +164,7 @@ h3 {
   .welcome h3 {
       color: black;
   }
-  article {
+  .article {
       padding: 5%;
   }
   
@@ -203,4 +203,218 @@ h3 {
       margin: 2%;
       text-align: center; 
   }
- 
+
+
+  @media screen and (max-width: 812px) {
+
+  }
+
+ /* ======================================================================================================================== */
+  @media screen and (max-width: 450px) {
+    body {
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .container {
+        font-family: 'Nunito Sans', sans-serif;
+        width: 100%;
+    }
+    h3 {
+        color: white;
+    }
+    .logo{
+        width: 40%;
+        margin-top: 2%;
+    }
+    /* logo and address space */
+    .empty-space {   
+        text-align: center;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        /* border: 1px solid red; */
+        width: 75%;
+    
+    }
+    .body {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    /* hide phone number */
+    .hide-info {
+        display: none;
+    }
+    /* targeting individual images */
+    .carousel-item{
+        padding: 2%;
+        width: auto;
+        height: 620px;
+        max-height: 620px;
+    }
+    .caroussel {
+        width: 100%;
+        text-align: center;
+        border: 1px solid red;
+        height: 20%;
+    }
+    .messages {
+        /* border: 1px solid red; */
+        width: 100%;
+        text-align: center;
+        margin-top: 0%;
+        padding: 2%;    
+    }
+    .icon-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    .icons {
+        width: 5%;
+        margin-bottom: 3%;
+        margin-top: 3%;
+    }
+    .icons:hover {
+        transform: scale(1.2);
+    }
+    .menu-button-burger {
+        /* border: 1px solid white; */
+        width: 50px;
+        height: 6px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 4px 10px rgba(255,101,47,.2);
+        transition: all .5s ease-in-out;
+    }
+    .menu-button-burger::before,
+    .menu-button-burger::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background: black;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.632);
+        transition: all .5s ease-in-out;
+    }
+     .menu-button-burger::before {
+        transform: translateY(-16px);
+        transform: translateY(16px);
+        }
+    
+    /* Dropdown Button */
+    .dropbtn {
+        margin-top: 5%;
+        margin-left: 5%;
+        /* border: 1px solid red; */
+        background-color: white;    
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        transition: all .5s ease-in-out;
+      }
+      
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        display: none;
+        position: fixed;
+        background-color: black;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        /* z-index: 1; */
+        /* border: 1px solid red; */
+        margin-left: 8%;
+        margin-top: 3%;
+      }
+      
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {background-color: rgb(198, 188, 188)}
+      
+      /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+      .show {display:block;}
+    
+      
+      .business-hours {
+          color: black;
+          text-align: center;
+          margin-top: 5%;
+      }
+      #back-to-top {
+          text-align: center;
+      }
+      .welcome {
+        border: none;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        color: black;  
+          border-radius: 2em;
+          border-top: 1px solid #3B5999;
+          border-bottom: 1px solid #3B5999; 
+      }
+      .welcome h3 {
+          color: black;
+      }
+      /* article {
+          padding: 5%;
+      } */
+      
+      section {
+          display: flex;
+          justify-content: space-around;
+          flex-direction: column;
+          width: 100%;
+          
+     }
+      #established {
+          margin-top: 5%;
+          margin-left: 5%;
+          padding: 2%;
+          font-size: 15px;
+      }
+      #welcome-header {
+          margin-top: 0%;
+          margin-left: 5%;
+          font-weight: bold;
+          font-size: 20px;
+      }
+      .article {
+          /* border: solid 1px red; */
+          height: 100%;
+          width: 100%;
+          margin-top: -15%;
+      }
+      #like {
+          margin-top: 4%;
+          font-weight: bold;
+      }
+      .my-info {
+          margin-top: 45%;
+          text-align: center;
+          
+          
+      }
+      #phone-num {
+          font-weight: bold;
+          margin-top: 2%;
+      }
+      #ref {
+          margin: 2%;
+          text-align: center; 
+      }
+      /* starting to change to responsive */
+     
+  }
