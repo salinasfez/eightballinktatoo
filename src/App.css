@@ -279,7 +279,7 @@ h3 {
         justify-content: space-around;
         justify-content: row;
         border: 1px solid red;
-        margin: 0%;
+        height: 10px;
     }
     .icons {
         width: 7%;
