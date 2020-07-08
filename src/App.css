@@ -278,6 +278,7 @@ h3 {
         display: flex;
         justify-content: space-around;
         justify-content: row;
+        border: 1px solid red;
     }
     .icons {
         width: 7%;
@@ -411,6 +412,7 @@ h3 {
           margin-top: 5%;
           font-weight: bold;
           font-size: 15px;
+          border: 1px solid green;
       }
       .my-info {
           margin-top: 45%;
