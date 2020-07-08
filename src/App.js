@@ -76,9 +76,7 @@ class App extends React.Component{
     return(
       <div className='container'>
         <div className='top-flex-container'>
-         {/* <div className='dropbtn'></div> */}
-         
-         <div className="dropbtn">
+        <div className="dropbtn">
                     <div onClick={this.handleDrop} className='dropbtn menu-button-burger'></div>
                     {/* <button onClick={this.handleDrop} className="dropbtn">Menu</button> */}
                     <div id="myDropdown" className="dropdown-content">

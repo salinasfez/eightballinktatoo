@@ -278,7 +278,6 @@ h3 {
         display: flex;
         justify-content: space-around;
         justify-content: row;
-        border: 1px solid red;
         height: 100%;
     }
     .icons {
@@ -291,23 +290,24 @@ h3 {
     }
     .text-area {
         width: 80%;
-        text-align: center;
+        
     }
     .menu-button-burger {
-        /* border: 1px solid red; */
-        width: 10px;
+        width: 2%;
         height: 2px;
         background: white;
         border-radius: 5px;
         box-shadow: 0 4px 10px rgba(255,101,47,.2);
         transition: all .5s ease-in-out;
+        
     }
+    /* this is for the hamburger lines */
     .menu-button-burger::before,
     .menu-button-burger::after {
         content: '';
         position: absolute;
-        width: 50px;
-        height: 6px;
+        width: 5%;
+        height: 2px;
         background: black;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.632);
@@ -322,13 +322,13 @@ h3 {
     .dropbtn {
         margin-top: 20%;
         margin-left: 5%;
-        /* border: 1px solid red; */
+        border: 1px solid red;
         background-color: white;    
         display:flex;
         justify-content: center;
         align-items: center;
-        width: 60px;
-        height: 60px;
+        width: 6%;
+        height: 6%;
         transition: all .5s ease-in-out;
       }
       
@@ -341,8 +341,8 @@ h3 {
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         /* z-index: 1; */
         /* border: 1px solid red; */
-        margin-left: 8%;
-        margin-top: 3%;
+        margin-left: 25%;
+        margin-top: 20%;
       }
       
       /* Links inside the dropdown */
@@ -414,7 +414,6 @@ h3 {
           margin-top: 5%;
           font-weight: bold;
           font-size: 15px;
-          border: 1px solid green;
       }
       .my-info {
           margin-top: 45%;
