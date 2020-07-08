@@ -257,7 +257,7 @@ h3 {
     .caroussel {
         width: 100%;
         text-align: center;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         height: 20%;
     }
     .messages {
@@ -271,19 +271,21 @@ h3 {
         display: flex;
         justify-content: space-evenly;
         flex-direction: row;
+        /* border: 1px solid red; */
     }
     .icons {
-        width: 5%;
+        width: 7%;
         margin-bottom: 3%;
         margin-top: 3%;
+        /* border: 1px solid red; */
     }
     .icons:hover {
         transform: scale(1.2);
     }
     .menu-button-burger {
-        /* border: 1px solid white; */
-        width: 50px;
-        height: 6px;
+        /* border: 1px solid red; */
+        width: 10px;
+        height: 2px;
         background: white;
         border-radius: 5px;
         box-shadow: 0 4px 10px rgba(255,101,47,.2);
@@ -307,15 +309,15 @@ h3 {
     
     /* Dropdown Button */
     .dropbtn {
-        margin-top: 5%;
+        margin-top: 20%;
         margin-left: 5%;
         /* border: 1px solid red; */
         background-color: white;    
         display:flex;
         justify-content: center;
         align-items: center;
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         transition: all .5s ease-in-out;
       }
       
@@ -398,8 +400,9 @@ h3 {
           margin-top: -15%;
       }
       #like {
-          margin-top: 4%;
+          margin-top: 5%;
           font-weight: bold;
+          font-size: 10px;
       }
       .my-info {
           margin-top: 45%;

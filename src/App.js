@@ -15,7 +15,8 @@ class App extends React.Component{
   state = {
     text: {
       recipient: '',
-      textMessage: ''
+      textMessage: '',
+      sent: false
     }
   }
   facebookTab = () => {
