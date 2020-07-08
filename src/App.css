@@ -322,7 +322,7 @@ h3 {
     .dropbtn {
         margin-top: 20%;
         margin-left: 5%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         background-color: white;    
         display:flex;
         justify-content: center;
