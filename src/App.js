@@ -106,7 +106,10 @@ class App extends React.Component{
           </div>
         </div>
         <div id='social-media' className='icon-container'>
+          <div>
             <h5 id='like'>Like, Follow, Email, or Call -----></h5>
+
+          </div>
             <div className='clase-iconos'>
               <img src={require('../src/images/icons/fb.svg')} alt={'facebook'} className='icons' onClick={() => this.facebookTab()}/>
               <img src={require('../src/images/icons/ig.svg')} alt={'ig'} className='icons' onClick={() => this.instagramTab()}/>

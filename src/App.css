@@ -60,8 +60,14 @@ h3 {
 }
 .icon-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: row;
+}
+.clase-iconos {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 70%;
 }
 .icons {
     width: 5%;
@@ -186,8 +192,10 @@ h3 {
       font-weight: bold;
   }
   #like {
-      margin-top: 4%;
+      margin-top: 8%;
       font-weight: bold;
+      /* border: solid 1px red; */
+      width: 100%;
   }
   .my-info {
       margin-top: 45%;
@@ -279,6 +287,7 @@ h3 {
         justify-content: space-around;
         justify-content: row;
         height: 100%;
+        margin-left: 15%;
     }
     .icons {
         width: 7%;
