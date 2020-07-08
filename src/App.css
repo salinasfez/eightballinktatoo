@@ -270,8 +270,14 @@ h3 {
     .icon-container {
         display: flex;
         justify-content: space-evenly;
-        flex-direction: row;
+        flex-direction: column;
+        text-align: center;
         /* border: 1px solid red; */
+    }
+    .clase-iconos {
+        display: flex;
+        justify-content: space-around;
+        justify-content: row;
     }
     .icons {
         width: 7%;
@@ -281,6 +287,10 @@ h3 {
     }
     .icons:hover {
         transform: scale(1.2);
+    }
+    .text-area {
+        width: 80%;
+        text-align: center;
     }
     .menu-button-burger {
         /* border: 1px solid red; */
@@ -402,7 +412,7 @@ h3 {
       #like {
           margin-top: 5%;
           font-weight: bold;
-          font-size: 10px;
+          font-size: 15px;
       }
       .my-info {
           margin-top: 45%;

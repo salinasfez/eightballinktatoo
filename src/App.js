@@ -108,12 +108,13 @@ class App extends React.Component{
           </div>
         </div>
         <div id='social-media' className='icon-container'>
-              <h5 id='like'>Like, Follow, Email, or Call -----></h5>
+            <div> <h5 id='like'>Like, Follow, Email, or Call -----></h5> </div>
+            <div className='clase-iconos'>
               <img src={require('../src/images/icons/fb.svg')} alt={'facebook'} className='icons' onClick={() => this.facebookTab()}/>
               <img src={require('../src/images/icons/ig.svg')} alt={'ig'} className='icons' onClick={() => this.instagramTab()}/>
               <img src={require('../src/images/icons/email.svg')} alt={'email'} className='icons' onClick={() => this.emailTab()}/>
               <img src={require('../src/images/icons/phone-icon.svg')} alt={'phone'} className='icons' onClick={() => this.callShop()}/>
-
+            </div>
           </div>
         {/* className='body' */}
         <div className='body'>
@@ -185,7 +186,7 @@ class App extends React.Component{
              <label className='hide-info'>Your phone number: </label><br />
              <input className='hide-info' value={text.recipient} onChange={e => this.setState({ text: { ...text, recipient: e.target.value }})} /><br />
              <div />
-             <textarea rows={5} cols={39} placeholder={'Type your message here'}  style = {textArea} value={text.textMessage} onChange={e => this.setState({ text: { ...text, textMessage: e.target.value}})} />
+             <textarea className='text-area' rows={5} cols={39} placeholder={'Type your message here'}  style = {textArea} value={text.textMessage} onChange={e => this.setState({ text: { ...text, textMessage: e.target.value}})} />
              <br></br>
              <Button type='submit' onClick={this.sendText}>Send text</Button>
              </form>
