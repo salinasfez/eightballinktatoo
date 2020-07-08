@@ -283,6 +283,7 @@ h3 {
     }
     .icons {
         width: 7%;
+        height: 7%;
         /* border: 1px solid red; */
     }
     .icons:hover {
