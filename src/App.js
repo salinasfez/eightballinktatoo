@@ -101,7 +101,7 @@ class App extends React.Component{
           
           <div>
             <p className='article'>
-                 Ideas become dreams. Dreams become reality. 8ball Ink Tattoo bloomed from the idea of an artist who wanted to bring a tattoo studio to his hometown. A studio dedicated to quality tattooing. You will not find an ego at 8ball Ink Tattoo, instead you'll be welcome with respect regardless of where you come from. The goal is to provide customers with a unique tattoo as original as it was portrayed in their plans.  
+                 Ideas become dreams. Dreams become reality. 8ball Ink Tattoo bloomed from the idea of an artist who wanted to bring a tattoo studio to his hometown. A studio dedicated to quality tattooing. You will not find an ego at 8ball Ink Tattoo, instead you'll be welcomed with respect regardless of where you come from. The goal is to provide customers with a unique tattoo as original as it was portrayed in their plans.  
             </p>
           </div>
         </div>

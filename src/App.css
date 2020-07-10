@@ -259,12 +259,14 @@ h3 {
     .carousel-item{
         padding: 2%;
         width: auto;
-        height: 620px;
-        max-height: 620px;
+        height: 100%;
     }
     .caroussel {
         width: 45%;
         text-align: center;
+    }
+    .carousel {
+        border: 1px solid white;
     }
     .messages {
         margin-top: 4%;
@@ -375,6 +377,7 @@ h3 {
           color: black;
           text-align: center;
           margin-top: 5%;
+          /* border: 5px solid red; */
       }
       #back-to-top {
           text-align: center;
