@@ -211,7 +211,7 @@ h3 {
       text-align: center; 
   }
 
-
+/* ========================================================================================================= */
   @media screen and (max-width: 812px) {
     body {
         margin: 0 auto;
@@ -236,9 +236,10 @@ h3 {
         border: 1px solid black;
         /* margin: 4%; */
         border-radius: 1em;
+        max-height: 420px;
     }
     .logo{
-        width: 40%;
+        width: 60%;
         margin-top: 2%;
     }
     /* logo and address space */
@@ -267,44 +268,53 @@ h3 {
         text-align: center;
     }
     .messages {
-        margin-top: 15%;
+        margin-top: 4%;
         width: 45%;
         text-align: center;    
     }
     .icon-container {
         display: flex;
         justify-content: space-around;
-        flex-direction: row;
+        flex-direction: column;
+        text-align: center;
     }
     .clase-iconos {
         display: flex;
         justify-content: space-around;
         flex-direction: row;
-        width: 70%;
+        width: 100%;
+        /* border: 1px solid red; */
     }
     .icons {
-        width: 5%;
+        width: 10%;
+        height: 10%;
         margin-bottom: 3%;
-        margin-top: 3%;
+        
+        /* border: 1px solid red; */
     }
     .icons:hover {
         transform: scale(1.2);
     }
+    .text-area {
+        width: 85%;
+        height: 50%;
+    }
     .menu-button-burger {
-        /* border: 1px solid white; */
-        width: 50px;
-        height: 6px;
+        width: 2%;
+        height: 2px;
         background: white;
         border-radius: 5px;
         box-shadow: 0 4px 10px rgba(255,101,47,.2);
         transition: all .5s ease-in-out;
+        
     }
+    /* this is for the hamburger lines */
     .menu-button-burger::before,
     .menu-button-burger::after {
         content: '';
         position: absolute;
-        width: 50px;
-        height: 6px;
+        width: 5%;
+        height: 2px;
         background: black;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.632);
@@ -317,15 +327,15 @@ h3 {
     
     /* Dropdown Button */
     .dropbtn {
-        margin-top: 5%;
+        margin-top: 20%;
         margin-left: 5%;
         /* border: 1px solid red; */
         background-color: white;    
         display:flex;
         justify-content: center;
         align-items: center;
-        width: 80px;
-        height: 80px;
+        width: 6%;
+        height: 6%;
         transition: all .5s ease-in-out;
       }
       
@@ -338,8 +348,8 @@ h3 {
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         /* z-index: 1; */
         /* border: 1px solid red; */
-        margin-left: 8%;
-        margin-top: 3%;
+        margin-left: 13%;
+        margin-top: 13%;
       }
       
       /* Links inside the dropdown */
@@ -376,7 +386,7 @@ h3 {
           justify-content: flex-end;
           display: flex;
           border-radius: 2em;
-          flex-direction: row;
+          flex-direction: column;
           border-top: 1px solid #3B5999;
           border-bottom: 1px solid #3B5999;
       }
@@ -385,6 +395,7 @@ h3 {
       }
       .article {
           padding: 5%;
+          margin-top: -12%;
       }
       
       section {
@@ -392,6 +403,7 @@ h3 {
           justify-content: space-around;
           flex-direction: column;
           width: 500px;
+          margin-top: -5%;
          
       }
       #established {
@@ -404,7 +416,6 @@ h3 {
           font-weight: bold;
       }
       #like {
-          margin-top: 8%;
           font-weight: bold;
           /* border: solid 1px red; */
           width: 100%;
