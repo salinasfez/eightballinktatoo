@@ -507,7 +507,7 @@ h3 {
         justify-content: space-around;
         justify-content: row;
         height: 100%;
-        margin-left: 15%;
+        /* margin-left: 15%; */
     }
     .icons {
         width: 12%;
