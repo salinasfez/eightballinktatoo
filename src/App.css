@@ -46,8 +46,7 @@ h3 {
 .carousel-item{
     padding: 2%;
     width: auto;
-    height: 620px;
-    max-height: 620px;
+    height: 100%;
 }
 .caroussel {
     width: 45%;
@@ -64,6 +63,8 @@ h3 {
     flex-direction: row;
 }
 .clase-iconos {
+    margin-top: 2%;
+    margin-bottom: 2%;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -191,10 +192,11 @@ h3 {
       font-weight: bold;
   }
   #like {
-      margin-top: 8%;
+      margin-top: 18%;
       font-weight: bold;
       /* border: solid 1px red; */
       width: 100%;
+      font-size: 20px;
   }
   .my-info {
       margin-top: 45%;
@@ -264,9 +266,6 @@ h3 {
     .caroussel {
         width: 45%;
         text-align: center;
-    }
-    .carousel {
-        border: 1px solid white;
     }
     .messages {
         margin-top: 4%;

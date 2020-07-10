@@ -123,7 +123,7 @@ class App extends React.Component{
           <div className='caroussel' id='arte'>
           
           <Carousel>
-              <Carousel.Item className='carousel-item' >
+              <Carousel.Item >
                 <img  className="d-block w-100" src={require('../src/images/IMG_4946.jpeg')} alt="First slide"/>
               </Carousel.Item>
               <Carousel.Item>
