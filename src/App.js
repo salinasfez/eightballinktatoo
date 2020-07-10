@@ -148,7 +148,7 @@ class App extends React.Component{
                 <img  className="d-block w-100" src={require('../src/images/IMG_0872.jpeg')} alt="First slide"/>
               </Carousel.Item>
               <Carousel.Item >
-                <img className="d-block w-100" src={require('../src/images/IMG_0741.jpeg')} alt="Second slide"/>
+                <img className="d-block w-100" src={require('../src/images/ink2.jpg')} alt="Second slide"/>
               </Carousel.Item>
               <Carousel.Item>
                 <img className="d-block w-100" src={require('../src/images/IMG_1542.jpeg')} alt="Second slide"/>
@@ -165,17 +165,14 @@ class App extends React.Component{
               <Carousel.Item>
                 <img className="d-block w-100" src={require('../src/images/IMG_5297.jpg')} alt="Second slide"/>
               </Carousel.Item>
-              {/* <Carousel.Item>
+              <Carousel.Item>
                 <img className="d-block w-100" src={require('../src/images/IMG_5296.jpg')} alt="Second slide"/>
-              </Carousel.Item> */}
+              </Carousel.Item>
               <Carousel.Item>
                 <img className="d-block w-100" src={require('../src/images/IMG_5295.jpg')} alt="Second slide"/>
               </Carousel.Item>
               <Carousel.Item>
                 <img className="d-block w-100" src={require('../src/images/IMG_5305.jpg')} alt="Second slide"/>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img className="d-block w-100" src={require('../src/images/IMG_5301.jpg')} alt="Second slide"/>
               </Carousel.Item>
           </Carousel>
           </div>
