@@ -182,7 +182,7 @@ class App extends React.Component{
              <p style={{color: 'white'}}>(please make mention of your email and telephone number if you want to be reached)</p>
              <form>
              <label className='hide-info'>Your phone number: </label><br />
-             <input className='hide-info' value={text.recipient} onChange={e => this.setState({ text: { ...text, recipient: e.target.value }})} /><br />
+             {/* <input className='hide-info' value={text.recipient} onChange={e => this.setState({ text: { ...text, recipient: e.target.value }})} /><br /> */}
              <div />
              <textarea className='text-area' rows={5} cols={39} placeholder={'Type your message here'}  style = {textArea} value={text.textMessage} onChange={e => this.setState({ text: { ...text, textMessage: e.target.value}})} />
              <br></br>
