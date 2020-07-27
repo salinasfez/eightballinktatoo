@@ -184,7 +184,7 @@ class App extends React.Component{
              <label className='hide-info'>Your phone number: </label><br />
              {/* <input className='hide-info' value={text.recipient} onChange={e => this.setState({ text: { ...text, recipient: e.target.value }})} /><br /> */}
              <div />
-             <textarea className='text-area' rows={5} cols={39} placeholder={'Type your message here'}  style = {textArea} value={text.textMessage} onChange={e => this.setState({ text: { ...text, textMessage: e.target.value}})} />
+             <textarea className='text-area' rows={5} cols={39} placeholder={'Type your message here'}  style = {textArea} value={text.textMessage}  />
              <br></br>
              <Button type='submit' onClick={this.sendText}>Send text</Button>
              </form>
